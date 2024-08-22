@@ -1,0 +1,14 @@
+<h1> Paises </h1>
+
+
+<div class="tarjetasPaises">
+    @foreach (Pais pais in ViewBag.ListaPaises)
+    {            
+        <div class="card" style="width: 18rem;">
+            <img src= @pais.Bandera class="card-img-top" alt="Bandera de @pais.Nombre">
+            <div class="card-body">
+                <h5 class="card-title">@pais.Nombre</h5>
+            </div>
+        </div>           
+    }
+</div>

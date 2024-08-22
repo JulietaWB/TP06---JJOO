@@ -4,7 +4,7 @@ using Dapper;
 public static class BD{
 
     // Métodos
-    private static string connectionString = @"Server=localhost; DataBase = TP6 bd; Trusted_Connection=True;";
+    private static string connectionString = @"Server=localhost; DataBase = JJOO; Trusted_Connection=True;";
 
     public static void AgregarDeportistas (Deportista dep)
     {
@@ -97,7 +97,7 @@ public static class BD{
 
     public static List<Deporte> ListarDeportes()
     {
-        string sql = "SELECT * FROM Deportess";
+        string sql = "SELECT * FROM Deportes";
         List<Deporte> ListaDeportes = new List<Deporte>(); 
         using (SqlConnection db =  new SqlConnection (connectionString)) 
         {

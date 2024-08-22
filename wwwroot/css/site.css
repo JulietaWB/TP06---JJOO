@@ -15,13 +15,6 @@ body {
 }
 
 
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
-}
-
 
 .bg-imagen{
   position: absolute;
@@ -30,4 +23,34 @@ footer {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+
+.tarjetasDeportes, .tarjetasPaises
+{
+  padding:10%;
+  padding-top:6%;
+  display: flex;
+  justify-content:space-around;
+}
+
+.card
+{
+  display: flex;
+  float: left;
+  justify-content:center;
+  border: 2px solid rgb(175, 175, 175);
+}
+
+
+footer {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+h1
+{
+  text-align: center;
+  color: #a50000;
 }
