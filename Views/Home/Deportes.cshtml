@@ -9,7 +9,7 @@
             <div class="card-body">
                 <h5 class="card-title">@dep.Nombre</h5>
             </div>
-            <a href='@Url.Action("VerDetalleDeporte", @dep.IdDeporte)' class="btn btn-primary">Ver Info</a>
+            <a href='@Url.Action("VerDetalleDeporte", new {iddeporte=@dep.IdDeporte})' class="btn btn-primary">Ver Info</a>
         </div>
     }
 </div>
