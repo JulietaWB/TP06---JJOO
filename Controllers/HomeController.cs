@@ -32,9 +32,9 @@ public class HomeController : Controller
 
     public IActionResult VerDetalleDeporte(int idDeporte)
     {
-        ViewBag.InfoDeporte= BD.VerInfoDeporte(idDeporte);
-        ViewBag.ListaDeportistas= BD.ListarDeportistasxDeporte(idDeporte);
-        return View("DetalleDeporte");
+        ViewBag.Dep= BD.VerInfoDeporte(idDeporte);
+        ViewBag.ListaDepor= BD.ListarDeportistasxDeporte(idDeporte);
+        return View();
     }
 
     public IActionResult VerDetallePais(int idPais)

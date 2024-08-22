@@ -1,0 +1,16 @@
+
+<h1> @ViewBag.Dep.Nombre </h1>
+
+<img src= @ViewBag.Dep.Foto alt="Foto @ViewBag.Dep.Nombre">
+
+<div class="tarjetas">
+    @foreach (Deportista depor in ViewBag.ListaDepor)
+    {            
+        <div class="card" style="width: 18rem;">
+            <img src= @depor.Foto class="card-img-top" alt="Foto de @depor.Nombre">
+            <div class="card-body">
+                <h5 class="card-title">@depor.Apellido @depor.Nombre</h5>
+            </div>
+        </div>           
+    }
+</div>
