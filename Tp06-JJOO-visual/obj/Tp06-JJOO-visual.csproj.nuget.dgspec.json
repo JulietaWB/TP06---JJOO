@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\Programacion2024\\Tp6 - JJOO\\Tp06-JJOO-visual\\Tp06-JJOO-visual.csproj": {}
+    "z:\\Programacion2024\\Tp6 - JJOO\\Tp06-JJOO-visual\\Tp06-JJOO-visual.csproj": {}
   },
   "projects": {
-    "Z:\\Programacion2024\\Tp6 - JJOO\\Tp06-JJOO-visual\\Tp06-JJOO-visual.csproj": {
+    "z:\\Programacion2024\\Tp6 - JJOO\\Tp06-JJOO-visual\\Tp06-JJOO-visual.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\Programacion2024\\Tp6 - JJOO\\Tp06-JJOO-visual\\Tp06-JJOO-visual.csproj",
+        "projectUniqueName": "z:\\Programacion2024\\Tp6 - JJOO\\Tp06-JJOO-visual\\Tp06-JJOO-visual.csproj",
         "projectName": "Tp06-JJOO-visual",
-        "projectPath": "Z:\\Programacion2024\\Tp6 - JJOO\\Tp06-JJOO-visual\\Tp06-JJOO-visual.csproj",
+        "projectPath": "z:\\Programacion2024\\Tp6 - JJOO\\Tp06-JJOO-visual\\Tp06-JJOO-visual.csproj",
         "packagesPath": "C:\\Users\\48464069\\.nuget\\packages\\",
-        "outputPath": "Z:\\Programacion2024\\Tp6 - JJOO\\Tp06-JJOO-visual\\obj\\",
+        "outputPath": "z:\\Programacion2024\\Tp6 - JJOO\\Tp06-JJOO-visual\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

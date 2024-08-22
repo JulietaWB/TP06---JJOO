@@ -16,8 +16,4 @@ public class Pais  {
         FechaFundacion=fechaFundacion;
     }
 
-    // Métodos
-    public variable nombreMetodo() {
-        //cuerpo    
-    }
 }

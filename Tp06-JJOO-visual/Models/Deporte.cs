@@ -17,8 +17,5 @@ public class Deporte  {
         Foto=foto;
     }
 
-    // Métodos
-    public variable nombreMetodo() {
-        //cuerpo    
+   
     }
-}
