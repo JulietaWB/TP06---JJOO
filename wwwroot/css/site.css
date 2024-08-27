@@ -54,3 +54,22 @@ h1
   text-align: center;
   color: #a50000;
 }
+
+.banner
+{
+  width: 100%;
+}
+
+.TituloOlimpico
+{
+  font-size:80%;
+  color:#a50000;
+  text-align: center;
+}
+
+h2
+{
+  font-size: medium;
+  color:#333333;
+  text-align: center;
+}
