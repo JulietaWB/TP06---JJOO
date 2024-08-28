@@ -46,7 +46,7 @@ public class HomeController : Controller
 
     public IActionResult VerDetalleDeportista(int idDeportista)
     {
-        ViewBag.DatosDeportista = BD.VerInfoDeportista(idDeportista);
+        ViewBag.DatosDepor = BD.VerInfoDeportista(idDeportista);
         return View("DetalleDeportista");
     }
 
@@ -72,9 +72,4 @@ public class HomeController : Controller
         return View();
     }
 
-    IActionResult Hitoria()
-    {
-        
-        return View();
-    }
 }
