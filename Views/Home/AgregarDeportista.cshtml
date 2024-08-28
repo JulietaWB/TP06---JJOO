@@ -1,0 +1,32 @@
+<h1> Agregar Deportistas </h1>
+
+<form method="post" action='@Url.Action("Habitacion")'>
+
+    <p>Apellido</p>
+    <input type="text" name="clave" placeholder="Tu respuesta"/>
+    <p>Nombre</p>
+    <input type="text" name="clave" placeholder="Tu respuesta"/>
+    <p>Link de la foto</p>
+    <input type="text" name="clave" placeholder="Tu respuesta"/>
+
+    <select class="form-select form-select-sm" aria-label="Small select example">
+        <option selected>País que representa:</option>
+        @foreach (Pais pais in ViewBag.ListaPaises)
+        { 
+            <option value=@pais.IdPais >@pais.Nombre</option>
+        }
+    </select>
+
+    <select class="form-select form-select-sm" aria-label="Small select example">
+        <option selected>Deporte en el que compite:</option>
+        @foreach (Deporte dep in ViewBag.ListaDeportes)
+        { 
+            <option value=@dep.IdDeporte >@dep.Nombre</option>
+        }
+    </select>
+
+    <div class="col-12">
+            <button class="btn btn-primary" type="submit">Agregar</button>
+    </div>
+
+</form>

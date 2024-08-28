@@ -51,11 +51,6 @@ footer {
   border-top: 1px solid #e9ecef;
 }
 
-h1
-{
-  text-align: center;
-  color: #a50000;
-}
 
 .banner
 {
@@ -87,11 +82,13 @@ h2
 
 .cajaIndex
 {
+  display: flex;
   margin-left:50%;
   background-color: rgba(249, 250, 251, 0.815);
   padding:2%;
   width: 45%;
   height: 800px;
   border-radius: 10%;
+  align-content:center;
 }
 
