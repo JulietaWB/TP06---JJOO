@@ -12,6 +12,8 @@ html {
 body {
   margin: 10px;
   padding: 10px;
+  min-height: 100%;
+
 }
 
 
@@ -62,14 +64,34 @@ h1
 
 .TituloOlimpico
 {
-  font-size:80%;
+  font-size:300%;
   color:#a50000;
   text-align: center;
 }
 
 h2
 {
-  font-size: medium;
-  color:#333333;
+  font-size: large;
+  color:#4b4b4b;
   text-align: center;
 }
+
+.bodyIndex
+{
+  width:100%;
+  height:100%;
+  background: url("/imgs/FONDO_INDEX.jpg") fixed left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cajaIndex
+{
+  margin-left:50%;
+  background-color: rgba(249, 250, 251, 0.815);
+  padding:2%;
+  width: 45%;
+  height: 800px;
+  border-radius: 10%;
+}
+
