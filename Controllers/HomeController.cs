@@ -71,4 +71,10 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    IActionResult Hitoria()
+    {
+        
+        return View();
+    }
 }
