@@ -1,17 +1,19 @@
 
-<h1> @ViewBag.InfoPais.Nombre </h1>
+<div class="caja">
+    <h1 class="titulo"> @ViewBag.InfoPais.Nombre </h1>
 
-<img src= @ViewBag.InfoPais.Foto alt="Foto @ViewBag.InfoPais.Nombre">
+    <img src= @ViewBag.InfoPais.Bandera alt="Foto @ViewBag.InfoPais.Nombre">
 
-<div class="tarjetas">
-    @foreach (Deportista depor in ViewBag.ListaDepor)
-    {            
-        <div class="card" style="width: 18rem;">
-            <img src= @depor.Foto class="card-img-top" alt="Foto de @depor.Nombre">
-            <div class="card-body">
-                <h5 class="card-title">@depor.Apellido @depor.Nombre</h5>
-            </div>
-            <a href='@Url.Action("VerDetalleDeportista", new {iddeporte=@depor.IdDeportista})' class="btn btn-primary">Ver más sobre el/la deportista</a>
-        </div>           
-    }
+    <div class="tarjetas">
+        @foreach (Deportista depor in ViewBag.ListaDepor)
+        {            
+            <div class="card" style="width: 18rem;">
+                <img src= @depor.Foto class="card-img-top" alt="Foto de @depor.Nombre">
+                <div class="card-body">
+                    <h5 class="card-title">@depor.Apellido @depor.Nombre</h5>
+                </div>
+                <a href='@Url.Action("VerDetalleDeportista", new {iddeporte=@depor.IdDeportista})' class="btn btn-primary">Ver más</a>
+            </div>           
+        }
+    </div>
 </div>

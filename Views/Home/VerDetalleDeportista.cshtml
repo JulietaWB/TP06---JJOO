@@ -1,18 +1,20 @@
-<h1> @ViewBag.DatosDepor.Nombre </h1>
+<div class="caja">
+    <h1 class="titulo"> @ViewBag.DatosDepor.Nombre </h1>
 
-<img src= @ViewBag.DatosDepor.Foto alt="Foto @ViewBag.DatosDepor.Nombre">
+    <img src= @ViewBag.DatosDepor.Foto alt="Foto @ViewBag.DatosDepor.Nombre">
 
-<div class="tarjetas">
-    @foreach (Deportista depor in ViewBag.DatosDepor)
-    {            
-        <div class="card" style="width: 18rem;">
-            <img src= @depor.Foto class="card-img-top" alt="Foto de @depor.Nombre">
-            <div class="card-body">
-                <h5 class="card-title">@depor.Apellido @depor.Nombre</h5>
-            </div>
-            <a href='@Url.Action("VerDetalleDeporte", new {iddeporte=@depor.IdDeporte})' class="btn btn-primary">Ver más sobre el deporte</a>
-            <a href='@Url.Action("VerDetallePais", new {iddeporte=@depor.IdPais})' class="btn btn-primary">Ver más sobre el país</a>
+    <div class="tarjetas">
+        @foreach (Deportista depor in ViewBag.DatosDepor)
+        {            
+            <div class="card" style="width: 18rem;">
+                <img src= @depor.Foto class="card-img-top" alt="Foto de @depor.Nombre">
+                <div class="card-body">
+                    <h5 class="card-title">@depor.Apellido @depor.Nombre</h5>
+                </div>
+                <a href='@Url.Action("VerDetalleDeporte", new {iddeporte=@depor.IdDeporte})' class="btn btn-primary">Ver más</a>
+                <a href='@Url.Action("VerDetallePais", new {iddeporte=@depor.IdPais})' class="btn btn-primary">Ver más</a>
 
-        </div>           
-    }
+            </div>           
+        }
+    </div>
 </div>

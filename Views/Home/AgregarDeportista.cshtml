@@ -1,32 +1,40 @@
-<h1> Agregar Deportistas </h1>
+<div class="cajaForm">
+    <h1 class="titulo"> Agregar Deportistas </h1>
 
-<form method="post" action='@Url.Action("Habitacion")'>
+    @if (@ViewBag.MsjError!="")
+    {
+        <h3>@ViewBag.MsjError </h3>
+    }
 
-    <p>Apellido</p>
-    <input type="text" name="Apellido"/>
-    <p>Nombre</p>
-    <input type="text" name="Nombre"/>
-    <p>Link de la foto</p>
-    <input type="text" name="Foto"/>
-
-    <select class="form-select form-select-sm" aria-label="Small select example">
-        <option selected>País que representa:</option>
-        @foreach (Pais pais in ViewBag.ListaPaises)
-        { 
-            <option value=@pais.IdPais >@pais.Nombre</option>
-        }
-    </select>
-
-    <select class="form-select form-select-sm" aria-label="Small select example">
-        <option selected>Deporte en el que compite:</option>
-        @foreach (Deporte dep in ViewBag.ListaDeportes)
-        { 
-            <option value=@dep.IdDeporte >@dep.Nombre</option>
-        }
-    </select>
-
-    <div class="col-12">
-            <button class="btn btn-primary" type="submit">Agregar</button>
-    </div>
     
-</form>
+    <form method="post" action='@Url.Action("GuardarDeportista", "Home")'>
+
+        <p>Apellido</p>
+        <input type="text" name="Apellido"/>
+        <p>Nombre</p>
+        <input type="text" name="Nombre"/>
+        <p>Link de la foto</p>
+        <input type="text" name="Foto"/>
+
+        <select class="form-select form-select-sm selector" aria-label="Small select example">
+            <option selected>País que representa:</option>
+            @foreach (Pais pais in ViewBag.ListaPaises)
+            { 
+                <option value=@pais.IdPais >@pais.Nombre</option>
+            }
+        </select>
+
+        <select class="form-select form-select-sm selector" aria-label="Small select example">
+            <option selected>Deporte en el que compite:</option>
+            @foreach (Deporte dep in ViewBag.ListaDeportes)
+            { 
+                <option value=@dep.IdDeporte >@dep.Nombre</option>
+            }
+        </select>
+
+        <div class="col-12">
+                <button class="btn btn-primary" type="submit">Agregar</button>
+        </div>
+
+    </form>
+</div>

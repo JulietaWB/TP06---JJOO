@@ -1,15 +1,18 @@
-<h1> Deportes </h1>
+<div class="caja">
+
+    <h1 class="titulo"> Deportes </h1>
 
 
-<div class="tarjetas">
-    @foreach (Deporte dep in ViewBag.ListaDeportes)
-    {      
-        <div class="card" style="width: 18rem;">
-            <img src= @dep.Foto class="card-img-top" alt="Foto @dep.Nombre">
-            <div class="card-body">
-                <h5 class="card-title">@dep.Nombre</h5>
+    <div class="tarjetas">
+        @foreach (Deporte dep in ViewBag.ListaDeportes)
+        {      
+            <div class="card" style="width: 18rem;">
+                <img src= @dep.Foto class="card-img-top" alt="Foto @dep.Nombre">
+                <div class="card-body">
+                    <h5 class="card-title">@dep.Nombre</h5>
+                </div>
+                <a href='@Url.Action("VerDetalleDeporte", new {iddeporte=@dep.IdDeporte})' class="btn btn-primary">Ver Info</a>
             </div>
-            <a href='@Url.Action("VerDetalleDeporte", new {iddeporte=@dep.IdDeporte})' class="btn btn-primary">Ver Info</a>
-        </div>
-    }
+        }
+    </div>
 </div>

@@ -1,15 +1,17 @@
-<h1> Paises </h1>
+<div class="caja">
+    <h1 class="titulo"> Paises </h1>
 
 
-<div class="tarjetas">
-    @foreach (Pais pais in ViewBag.ListaPaises)
-    {            
-        <div class="card" style="width: 18rem;">
-            <img src= @pais.Bandera class="card-img-top" alt="Bandera de @pais.Nombre">
-            <div class="card-body">
-                <h5 class="card-title">@pais.Nombre</h5>
-            </div>
-            <a href='@Url.Action("VerDetallePais", new {iddeporte=@dep.IdPais})' class="btn btn-primary">Ver Info</a>
-        </div>           
-    }
+    <div class="tarjetas">
+        @foreach (Pais pais in ViewBag.ListaPaises)
+        {            
+            <div class="card" style="width: 18rem;">
+                <img src= @pais.Bandera class="card-img-top" alt="Bandera de @pais.Nombre">
+                <div class="card-body">
+                    <h5 class="card-title">@pais.Nombre</h5>
+                </div>
+                <a href='@Url.Action("VerDetallePais", new {idPais=@pais.IdPais})' class="btn btn-primary">Ver Info</a>
+            </div>           
+        }
+    </div>
 </div>

@@ -40,28 +40,50 @@ public class HomeController : Controller
     public IActionResult VerDetallePais(int idPais)
     {
         ViewBag.InfoPais = BD.VerInfoPais(idPais);
-        ViewBag.ListaDeportistas= BD.ListarDeportistasxPais(idPais);
-       return View("DetallePais"); 
+        ViewBag.ListaDepor= BD.ListarDeportistasxPais(idPais);
+       return View(); 
     }
 
     public IActionResult VerDetalleDeportista(int idDeportista)
     {
         ViewBag.DatosDepor = BD.VerInfoDeportista(idDeportista);
-        return View("DetalleDeportista");
+        return View();
     }
 
     public IActionResult AgregarDeportista()
     {
         ViewBag.ListaPaises = BD.ListarPaises();
         ViewBag.ListaDeportes = BD.ListarDeportes();
-        return View("FormularioDeportistas");
+        return View();
     }
 
-    [HttpPost] IActionResult GuardarDeportista(Deportista dep)
+    [HttpPost] IActionResult GuardarDeportista(string Nombre, string Apellido, string Foto, int IdPais, int IdDeporte)
     {
+        if (Nombre is null || Apellido is null || Foto is null || IdPais is null || IdDeporte is null)
+        {
+            ViewBag.ListaPaises = BD.ListarPaises();
+            ViewBag.ListaDeportes = BD.ListarDeportes();
+            ViewBag.MsjError= "No pueden haber campos vacíos.";
+            return View("AgregarDeportista");
+
+        } else
+        {
+
+            ViewBag.MsjError= "No pueden haber campos vacíos.";
+            ViewBag.listaDestinos = ORTWorld.CargarDestinos();
+            ViewBag.listaHoteles =  ORTWorld.CargarHoteles();
+            ViewBag.listAereos = ORTWorld.CargarAereos();
+            ViewBag.listExcursiones = ORTWorld.CargarExcursiones();
+            return View ("SelectPaquetes");
+            return View("Index");
+        }
+
+
+
         BD.AgregarDeportistas(dep);
         return View("Index");
     }
+
     IActionResult EliminarDeportista(int idCandidato)
     {
         BD.EliminarDeportista(idCandidato);
