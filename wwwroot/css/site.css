@@ -1,7 +1,26 @@
-html {
-  font-size: 14px;
-  min-height: 100%;
+*{
+  font-family: Tahoma, Verdana, sans-serif;
 }
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+
+}
+
+#myVideo {  
+  
+  background-position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: -1;
+}  
 
 @media (min-width: 768px) {
   html {
@@ -9,20 +28,6 @@ html {
   }
 }
 
-.fondo
-{
-  background-repeat: repeat;
-  background-image: url('../imgs/pictogramas2.png');
-}
-
-.bg-imagen{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-}
 
 .tarjetas
 {
@@ -40,12 +45,6 @@ html {
 }
 
 
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
-}
 
 .titulo
 {
@@ -103,27 +102,8 @@ p
   margin-left: 43%;
 }
 
-.bodyIndex
-{
-  background-image: url('/imgs/FONDO_INDEX.jpg');
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: 100%;  
-}
 
-.cajaIndex
-{
-  display: flex;
-  margin-left:50%;
-  background-color: rgba(249, 250, 251, 0.815);
-  padding:2%;
-  width: 45%;
-  height: 800px;
-  border-radius: 10%;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .caja, .cajaForm
 {

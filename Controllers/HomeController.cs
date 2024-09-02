@@ -57,7 +57,8 @@ public class HomeController : Controller
         return View();
     }
 
-    [HttpPost] IActionResult GuardarDeportista(string Nombre, string Apellido, string Foto, int IdPais, int IdDeporte)
+
+   /* [HttpPost] IActionResult GuardarDeportista(string Nombre, string Apellido, string Foto, int IdPais, int IdDeporte)
     {
         if (Nombre is null || Apellido is null || Foto is null || IdPais is null || IdDeporte is null)
         {
@@ -93,5 +94,6 @@ public class HomeController : Controller
     {
         return View();
     }
+    */
 
 }
